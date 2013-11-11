@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+.touch-area {
+	height: 44px;
+	width: 90%;
+	margin: 10px 5%;
+	background-color: gray;
+}
+
+.touching {
+	background-color: black;
+}
+
+.touch-indicator {
+	border-radius: 16px;
+	height: 16px;
+	width: 16px;
+	background-color: orange;
+	position: absolute;
+}
