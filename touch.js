@@ -11,14 +11,14 @@ $(document).ready(function(){
 	$("body").on("touchstart mousedown", function(e){
 		touch = e.touches[0];
 		indicator.appendTo(document.body).css({
-			"top": e.pageY-8+"px",
-			"left": e.pageX-8+"px"
+			"top": touch.pageY-8+"px",
+			"left": touch.pageX-8+"px"
 		});
 	}).on('mousemove', function(e){
 		touch = e.touches[0];
 		indicator.css({
-			"top": e.pageY-8+"px",
-			"left": e.pageX-8+"px"
+			"top": touch.pageY-8+"px",
+			"left": touch.pageX-8+"px"
 		});
 	}).on('touchend mouseup', function(){
 		indicator.remove();
