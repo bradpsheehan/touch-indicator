@@ -14,12 +14,6 @@ $(document).ready(function(){
 			"top": touch.pageY-8+"px",
 			"left": touch.pageX-8+"px"
 		});
-	}).on('mousemove', function(e){
-		touch = e.touches[0];
-		indicator.css({
-			"top": touch.pageY-8+"px",
-			"left": touch.pageX-8+"px"
-		});
 	}).on('touchend', function(){
 		indicator.remove();
 	});
